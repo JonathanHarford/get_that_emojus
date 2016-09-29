@@ -11,6 +11,6 @@ for k,v in emojidict['emoji'].items():
         continue
     dlname = k + v[v.rfind('.'):]
     print(dlname)
-    #urllib.request.urlretrieve (v, dlname)
+    urllib.request.urlretrieve (v, dlname)
     count += 1
 print(count, 'emoji downloaded.')
